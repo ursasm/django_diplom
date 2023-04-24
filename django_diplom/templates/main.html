@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список загруженых файлов</title>
+</head>
+<body>
+    <form action="/file_data/" method="post">
+        {% csrf_token %}
+        <label for="file_input">Выберете файл: </label>
+        <input id="file_input" type="file" name="file">
+        <input type="submit" value="OK">
+    </form>
+</body>
+</html>
